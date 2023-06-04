@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulir Pendaftaran Anggota</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        font-family: "Poppins", sans-serif;
+        background-color: #111;
+        background-image: linear-gradient(to bottom, #010101, #333);
+      }
+
+      .form-container {
+        width: 400px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f7f7f7;
+      }
+
+      h1 {
+        text-align: center;
+        color: #fff;
+        margin-top: 0;
+      }
+
+      label {
+        font-weight: bold;
+      }
+
+      .form-container h1 {
+        color: #111;
+      }
+
+      input[type="text"],
+      input[type="password"],
+      input[type="email"],
+      input[type="date"],
+      input[type="checkbox"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        box-sizing: border-box;
+      }
+
+      input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 3px;
+        background-color: lightskyblue;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: lightblue;
+      }
+
+      #registrationForm {
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <form id="registrationForm" onsubmit="validateForm(event)">
+        <label for="name">Nama:</label><br />
+        <input type="text" id="name" required /><br /><br />
+
+        <label for="password">Password:</label><br />
+        <input type="password" id="password" required /><br /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" required /><br /><br />
+
+        <label for="dob">Tanggal Lahir:</label><br />
+        <input type="date" id="dob" required /><br /><br />
+
+        <input type="checkbox" id="agreement" required />
+        <label for="agreement">Saya setuju dengan syarat dan ketentuan.</label
+        ><br /><br />
+
+        <input type="submit" value="Daftar" />
+      </form>
+    </div>
+
+    <script>
+      // JavaScript code goes here
+    </script>
+  </body>
+</html>
